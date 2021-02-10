@@ -1,0 +1,16 @@
+append config
+    -siteTitle='Empresas ABC de tus sueños'
+
+div.header__container
+    a(href="").header__link--img
+        img(src="/img/logo.png", alt="logo").header__logo
+    h1.header__title=`${siteTitle}`
+    nav.nav
+        nav.nav__container
+            ul.nav__ul
+                li.nav__li: a(href="/index.html").nav__link inicio
+                li.nav__li: a(href="/contacto.html").nav__link contactos
+                li.nav__li: a(href="/nosotros.html").nav__link nosotros
+                li.nav__li: a(href="/portafolio.html").nav__link portafolio
+                li.nav__li: a(href="/servicios.html").nav__link servicios
+                

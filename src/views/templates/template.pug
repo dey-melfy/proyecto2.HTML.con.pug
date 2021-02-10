@@ -1,0 +1,29 @@
+block config
+	include ../config/config.pug
+block mixins
+	include ../mixins/mixin.pug
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title=`${title}| ${siteTitle}`
+		block style
+			link(rel="stylesheet", href=firstStyleCss)
+			link(rel="stylesheet", href=firstStyleCss)
+	body
+		div.contact__container
+			include ../blocks/socialContact.pug
+		header.header
+			include ../blocks/header.pug 
+		div.banner
+			div.banner__container
+				include ../blocks/banner.pug 
+		article.card
+			include ../blocks/articleCard.pug
+		aside.aside
+			div.aside__container
+				include ../blocks/aside.pug
+		footer.footer
+			
